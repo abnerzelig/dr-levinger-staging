@@ -1,2 +1,8 @@
 # Local Netlify folder
 .netlify
+node_modules/
+dist/
+src/
+package.json
+package-lock.json
+tailwind.config.js
