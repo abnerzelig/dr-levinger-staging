@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טיפול יאג לייזר לקטרקט משני | ד״ר אליה לוינגר</title>
+    <link rel="canonical" href="https://dr-levinger.co.il/yag.html">
+    <meta name="description" content="טיפול יאג לייזר (YAG) לקטרקט משני - הפתרון לירידה בראייה לאחר ניתוח קטרקט. ד״ר אליה לוינגר, מומחה בניתוחי קטרקט.">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7a8450',
+                        'primary-dark': '#5c6340',
+                        'primary-light': '#a3b06a',
+                    },
+                    fontFamily: {
+                        'assistant': ['Assistant', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Assistant', sans-serif; }
+        
+        /* Navigation Styles */
+        .nav-desktop {
+            display: none;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .nav-desktop > a {
+            padding: 8px 12px;
+            color: #333;
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+        .nav-desktop > a:hover { color: #7a8450; }
+        .nav-desktop .btn-primary {
+            background: #7a8450;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+        .nav-desktop .btn-primary:hover { background: #5c6340; }
+        
+        /* Dropdown */
+        .dropdown { position: relative; }
+        .dropdown-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 12px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            color: #333;
+            white-space: nowrap;
+        }
+        .dropdown-btn:hover { color: #7a8450; }
+        .dropdown-icon {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.3s;
+        }
+        .dropdown:hover .dropdown-icon { transform: rotate(180deg); }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            border-radius: 12px;
+            padding: 10px 0;
+            min-width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            transition: all 0.2s;
+        }
+        .dropdown-menu a:hover {
+            background: #f7f8f2;
+            color: #7a8450;
+        }
+        
+        /* Mobile Navigation */
+        .nav-mobile {
+            display: none;
+            flex-direction: column;
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e5e6de;
+        }
+        .nav-mobile.active { display: flex; }
+        .nav-mobile > a {
+            padding: 12px 0;
+            color: #333;
+            font-weight: 500;
+            border-bottom: 1px solid #f3f4ef;
+        }
+        .nav-mobile > a:hover { color: #7a8450; }
+        .nav-mobile .btn-primary {
+            margin-top: 15px;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 25px;
+            background: #7a8450;
+            color: white;
+        }
+        .mobile-dropdown {
+            padding: 15px 0;
+            border-bottom: 1px solid #f3f4ef;
+        }
+        .mobile-dropdown-title {
+            display: block;
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .mobile-dropdown a {
+            display: block;
+            padding: 8px 15px;
+            color: #333;
+            font-weight: 500;
+        }
+        .mobile-dropdown a:hover { color: #7a8450; }
+        
+        @media (min-width: 1024px) {
+            .nav-desktop { display: flex; }
+        }
+        
+.page-content {
+            padding: 120px 0 80px;
+            background: var(--background);
+        }
+        .page-content h1 {
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .content-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .content-section h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 10px;
+        }
+        .content-section h3 {
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        .content-section p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+        .content-section ul {
+            list-style: disc;
+            padding-right: 25px;
+            margin-bottom: 20px;
+        }
+        .content-section li {
+            line-height: 1.8;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        .content-section strong {
+            color: var(--primary-dark);
+        }
+        .highlight-box {
+            background: var(--background-alt);
+            border-right: 4px solid var(--primary);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .steps-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding-right: 0;
+        }
+        .steps-list li {
+            counter-increment: step-counter;
+            padding-right: 40px;
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .steps-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: var(--primary);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        /* FAQ Accordion Styles */
+        .faq-accordion {
+            margin-top: 20px;
+        }
+        .faq-item {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .faq-question {
+            width: 100%;
+            padding: 18px 20px;
+            background: #f9fafb;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            text-align: right;
+            transition: background 0.2s;
+            font-family: inherit;
+        }
+        .faq-question:hover {
+            background: #f3f4f6;
+        }
+        .faq-question span {
+            flex: 1;
+        }
+        .faq-icon {
+            width: 20px;
+            height: 20px;
+            stroke: var(--primary);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-right: 12px;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: white;
+        }
+        .faq-answer p {
+            padding: 20px;
+            margin: 0;
+            border-top: 1px solid #e5e7eb;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+        <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="w-full px-4 xl:px-8 py-2 flex justify-between items-center">
+            <!-- Mobile menu button -->
+            <button id="menuBtn" class="lg:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <!-- RIGHT side: Logo + Name -->
+            <div class="hidden lg:flex items-center gap-3 order-first">
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="" class="h-12 w-auto" aria-hidden="true" width="48" height="48">
+                </picture>
+                <span class="text-xl font-extrabold text-primary-dark whitespace-nowrap">ד"ר אליה לוינגר</span>
+            </div>
+            <!-- CENTER: Desktop nav -->
+            <nav class="nav-desktop">
+                <a href="index.html">בית</a>
+                <a href="about.html">אודות</a>
+                <a href="cataract.html">קטרקט</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        התמחויות המרפאה
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="pterygium.html">פטריגיום</a>
+                        <a href="dry-eye.html">עין יבשה</a>
+                        <a href="keratoconus.html">קרטוקונוס</a>
+                        <a href="yag.html">יאג (קטרקט משני)</a>
+                    </div>
+                </div>
+                <a href="faq.html">שאלות נפוצות</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        מידע למטופלים
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="before-surgery.html">לפני ניתוח קטרקט</a>
+                        <a href="after-surgery.html">אחרי ניתוח קטרקט</a>
+                        
+                        
+                        <a href="forms.html">טפסים</a>
+                    </div>
+                </div>
+                <a href="https://wa.me/972544826061" target="_blank" class="btn-primary">צרו קשר</a>
+            </nav>
+            <!-- LEFT side: Info + Phone -->
+            <div class="flex items-center gap-3">
+                <div class="flex flex-col text-left">
+                    <span class="lg:hidden text-lg font-extrabold text-primary-dark">ד"ר אליה לוינגר</span>
+                    <span class="text-sm text-gray-500 whitespace-nowrap">מומחה בניתוחי קטרקט ועדשות פרימיום | תל אביב | <a href="tel:0544826061" class="text-primary font-semibold">📞 054-482-6061</a></span>
+                </div>
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="" class="lg:hidden h-10 w-auto" aria-hidden="true" width="40" height="40">
+                </picture>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileNav">
+            <a href="index.html">בית</a>
+            <a href="about.html">אודות</a>
+            <a href="cataract.html">קטרקט</a>
+            <div class="mobile-dropdown">
+                <span class="mobile-dropdown-title">התמחויות המרפאה:</span>
+                <a href="pterygium.html">פטריגיום</a>
+                <a href="dry-eye.html">עין יבשה</a>
+                <a href="keratoconus.html">קרטוקונוס</a>
+                <a href="yag.html">יאג (קטרקט משני)</a>
+            </div>
+            <a href="faq.html">שאלות נפוצות</a>
+            <div class="mobile-dropdown">
+                <span class="mobile-dropdown-title">מידע למטופלים:</span>
+                <a href="before-surgery.html">לפני ניתוח קטרקט</a>
+                <a href="after-surgery.html">אחרי ניתוח קטרקט</a>
+                
+                
+                <a href="forms.html">טפסים</a>
+            </div>
+            <a href="https://wa.me/972544826061" target="_blank" class="btn-primary">צרו קשר</a>
+        </nav>
+    </header>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileNav').classList.toggle('active');
+        });
+    </script>
+
+
+    <main class="page-content">
+        <div class="content-section">
+            <h1>טיפול יאג לייזר (YAG)</h1>
+            <p class="subtitle" style="text-align: center; font-size: 1.2rem; color: var(--text); margin-bottom: 30px;">הפתרון ל"קטרקט משני" וירידה בראייה לאחר ניתוח</p>
+            
+            <div class="highlight-box">
+                <p style="margin: 0;">עברתם ניתוח קטרקט בהצלחה, הראייה השתפרה פלאים, אך כעבור מספר חודשים או שנים אתם מרגישים שוב ירידה בחדות הראייה? ייתכן שאתם סובלים ממה שמכונה "קטרקט משני". <strong>הבשורות הטובות: הקטרקט לא חזר</strong>, והטיפול בבעיה הוא פשוט, מהיר ואינו דורש ניתוח חוזר.</p>
+            </div>
+            
+            <h2>מהו קטרקט משני (PCO) ומדוע הוא נוצר?</h2>
+            <p>רבים טועים לחשוב שהקטרקט "צמח מחדש", אך זה לא המצב.</p>
+            <p>בניתוח קטרקט, ד״ר לוינגר מסיר את העדשה העכורה אך משאיר את "הקופסית האחורית" (המעטפת הדקיקה והשקופה של העדשה הטבעית) במקומה, כדי שתחזיק את העדשה המלאכותית החדשה.</p>
+            <p>אצל חלק מהמטופלים (כ-10%-20%), תאים מיקרוסקופיים נודדים עם הזמן אל מרכז הקופסית האחורית ויוצרים עכירות. עכירות זו חוסמת את מעבר האור וגורמת לטשטוש הדומה לזה של הקטרקט המקורי.</p>
+            
+            <h2>איך מתבצע הטיפול? (YAG Capsulotomy)</h2>
+            <p>הטיפול בעכירות זו <strong>אינו ניתוח</strong> ואינו דורש חדר ניתוח או חתכים. הפעולה מתבצעת במרפאה באמצעות מכשיר לייזר מתקדם הנקרא YAG:</p>
+            
+            <ul class="steps-list">
+                <li><strong>ללא כאב:</strong> העין מאולחשת באמצעות טיפות בלבד.</li>
+                <li><strong>דיוק מירבי:</strong> הלייזר יוצר פתח זעיר ומדויק במרכז הקופסית העכורה ("מנקה את החלון"), ובכך מאפשר לאור להיכנס שוב לעין ללא הפרעה.</li>
+                <li><strong>מהירות:</strong> ההליך נמשך דקות ספורות בלבד.</li>
+            </ul>
+            
+            <h2>למה לצפות לאחר הטיפול?</h2>
+            <p>השיפור בראייה הוא לרוב <strong>מיידי</strong> או מורגש תוך שעות ספורות (לאחר שהשפעת הטיפות להרחבת האישונים חולפת).</p>
+            <ul>
+                <li>אין צורך בתקופת החלמה, וניתן לחזור לשגרה מלאה מיד.</li>
+                <li>לעיתים ייתכן שתבחינו ב"זבובים" או נקודות צפות בשדה הראייה בימים הראשונים, תופעה שלרוב חולפת מעצמה.</li>
+            </ul>
+            
+            <h2>האם הטיפול ביאג לייזר הוא חד-פעמי?</h2>
+            <p><strong>כן.</strong> ברגע שבוצע פתח בקופסית האחורית באמצעות הלייזר, העכירות לא יכולה לחזור באותו מקום. הטיפול פותר את בעיית הקטרקט המשני <strong>לצמיתות</strong>.</p>
+            
+            <h2>שאלות נפוצות</h2>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>האם זה נחשב ניתוח חוזר?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>לא, זהו הליך לייזר קצר ובלתי פולשני המתבצע במרפאה. הוא לא חוזר על פעולת ניתוח הקטרקט, אלא רק מנקה את העכירות שהצטברה על קפסולת העדשה.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>האם הראייה חוזרת מיד?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>השיפור מורגש לרוב כבר לאחר מספר שעות, ברגע שהשפעת טיפות הרחבת האישונים פגה והטשטוש הראשוני מהלייזר מתפוגג.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>האם אצטרך לעבור את הטיפול הזה שוב בעתיד?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>לא; ברגע שיוצרים את הפתח המרכזי בקפסולה באמצעות הלייזר, העכירות אינה יכולה לצמוח חזרה, ולכן מדובר בטיפול חד-פעמי לכל החיים.</p>
+                    </div>
+                </div>
+            </div>
+</div>
+    
+        <!-- CTA -->
+        <section class="mt-16 px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-6">רוצים לקבוע בדיקת ייעוץ אישית?</h2>
+                <a href="https://wa.me/972544826061?text=שלום%2C%20אשמח%20לקבוע%20תור%20לייעוץ" target="_blank" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-dark transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                    קביעת ייעוץ אישי
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: #f3f4ef; padding: 30px 0;">
+        <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
+            <p style="color: #5a6339;">© 2026 ד"ר אליה לוינגר. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/972544826061?text=שלום%2C%20אשמח%20לקבוע%20תור%20לייעוץ" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" onclick="return handleWaClick(this, event)" aria-label="קביעת ייעוץ אישי">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"></picture>
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span>קביעת ייעוץ אישי</span>
+    </a>
+    <!-- UserWay Accessibility Widget -->
+    <script defer src="https://cdn.userway.org/widget.js" data-account="free" data-position="3"></script>
+<script>
+    function handleWaClick(el, e) {
+        if (!el.classList.contains('expanded')) {
+            e.preventDefault();
+            el.classList.add('expanded');
+            return false;
+        }
+        return true;
+    }
+    document.addEventListener('click', function(e) {
+        var wa = document.querySelector('.floating-whatsapp');
+        if (wa && !wa.contains(e.target)) {
+            wa.classList.remove('expanded');
+        }
+    });
+    </script>
+</body>
+</html>

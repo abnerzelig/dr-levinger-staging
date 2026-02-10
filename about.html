@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אודות ד"ר אליה לוינגר | מומחה בניתוחי קטרקט</title>
+    <link rel="canonical" href="https://dr-levinger.co.il/about.html">
+    <meta name="description" content="ד"ר אליה לוינגר - מומחה למחלות עיניים, קטרקט וניתוחי רפרקציה. מנהל שירות הקטרקט באיכילוב.">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7a8450',
+                        'primary-dark': '#5c6340',
+                        'primary-light': '#a3b06a',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Assistant', sans-serif; }
+        
+        /* Navigation Styles */
+        .nav-desktop {
+            display: none;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .nav-desktop > a {
+            padding: 8px 12px;
+            color: #333;
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+        .nav-desktop > a:hover { color: #7a8450; }
+        .nav-desktop .btn-primary {
+            background: #7a8450;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+        .nav-desktop .btn-primary:hover { background: #5c6340; }
+        
+        /* Dropdown */
+        .dropdown { position: relative; }
+        .dropdown-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 12px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            color: #333;
+            white-space: nowrap;
+        }
+        .dropdown-btn:hover { color: #7a8450; }
+        .dropdown-icon {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.3s;
+        }
+        .dropdown:hover .dropdown-icon { transform: rotate(180deg); }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            border-radius: 12px;
+            padding: 10px 0;
+            min-width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            transition: all 0.2s;
+        }
+        .dropdown-menu a:hover {
+            background: #f7f8f2;
+            color: #7a8450;
+        }
+        
+        /* Mobile Navigation */
+        .nav-mobile {
+            display: none;
+            flex-direction: column;
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e5e6de;
+        }
+        .nav-mobile.active { display: flex; }
+        .nav-mobile > a {
+            padding: 12px 0;
+            color: #333;
+            font-weight: 500;
+            border-bottom: 1px solid #f3f4ef;
+        }
+        .nav-mobile > a:hover { color: #7a8450; }
+        .nav-mobile .btn-primary {
+            margin-top: 15px;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 25px;
+            background: #7a8450;
+            color: white;
+        }
+        .mobile-dropdown {
+            padding: 15px 0;
+            border-bottom: 1px solid #f3f4ef;
+        }
+        .mobile-dropdown-title {
+            display: block;
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .mobile-dropdown a {
+            display: block;
+            padding: 8px 15px;
+            color: #333;
+            font-weight: 500;
+        }
+        .mobile-dropdown a:hover { color: #7a8450; }
+        
+        @media (min-width: 1024px) {
+            .nav-desktop { display: flex; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="w-full px-4 xl:px-8 py-2 flex justify-between items-center">
+            <!-- Mobile menu button -->
+            <button id="menuBtn" class="lg:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <!-- RIGHT side: Logo + Name -->
+            <div class="hidden lg:flex items-center gap-3">
+                <picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png" alt="" class="h-12 w-auto" aria-hidden="true" width="48" height="48"></picture>
+                <a href="index.html" class="text-xl font-extrabold text-primary-dark whitespace-nowrap hover:text-primary transition">ד"ר אליה לוינגר</a>
+            </div>
+            <!-- CENTER: Desktop nav -->
+            <nav class="nav-desktop">
+                <a href="index.html">בית</a>
+                <a href="about.html">אודות</a>
+                <a href="cataract.html">קטרקט</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        התמחויות המרפאה
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="pterygium.html">פטריגיום</a>
+                        <a href="dry-eye.html">עין יבשה</a>
+                        <a href="keratoconus.html">קרטוקונוס</a>
+                        <a href="yag.html">יאג (קטרקט משני)</a>
+                    </div>
+                </div>
+                <a href="faq.html">שאלות נפוצות</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        מידע למטופלים
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="before-surgery.html">לפני ניתוח קטרקט</a>
+                        <a href="after-surgery.html">אחרי ניתוח קטרקט</a>
+                        
+                        
+                        <a href="forms.html">טפסים</a>
+                    </div>
+                </div>
+                <a href="https://wa.me/972544826061" target="_blank" class="btn-primary">צרו קשר</a>
+            </nav>
+            <!-- LEFT side: Info + Phone -->
+            <div class="flex items-center gap-3">
+                <div class="flex flex-col text-left">
+                    <a href="index.html" class="lg:hidden text-lg font-extrabold text-primary-dark">ד"ר אליה לוינגר</a>
+                    <span class="text-sm text-gray-500 whitespace-nowrap">מומחה בניתוחי קטרקט ועדשות פרימיום | תל אביב | <a href="tel:0544826061" class="text-primary font-semibold">📞 054-482-6061</a></span>
+                </div>
+                <picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png" alt="" class="lg:hidden h-10 w-auto" aria-hidden="true" width="40" height="40"></picture>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileNav">
+            <a href="index.html">בית</a>
+            <a href="about.html">אודות</a>
+            <a href="cataract.html">קטרקט</a>
+            <div class="mobile-dropdown">
+                <span class="mobile-dropdown-title">התמחויות המרפאה:</span>
+                <a href="pterygium.html">פטריגיום</a>
+                <a href="dry-eye.html">עין יבשה</a>
+                <a href="keratoconus.html">קרטוקונוס</a>
+                <a href="yag.html">יאג (קטרקט משני)</a>
+            </div>
+            <a href="faq.html">שאלות נפוצות</a>
+            <div class="mobile-dropdown">
+                <span class="mobile-dropdown-title">מידע למטופלים:</span>
+                <a href="before-surgery.html">לפני ניתוח קטרקט</a>
+                <a href="after-surgery.html">אחרי ניתוח קטרקט</a>
+                
+                
+                <a href="forms.html">טפסים</a>
+            </div>
+            <a href="https://wa.me/972544826061" target="_blank" class="btn-primary">צרו קשר</a>
+        </nav>
+    </header>
+
+    <main class="pt-32 pb-20">
+        <!-- About Hero -->
+        <section class="px-6">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl md:text-4xl text-primary-dark mb-4 text-center">אודות ד״ר אליה לוינגר</h1>
+                <p class="text-xl text-gray-600 text-center mb-10">מומחה קטרקט, קרנית ועין יבשה</p>
+                
+                <div class="flex flex-col md:flex-row gap-10 items-start">
+                    <div class="md:w-1/3">
+                        <picture>
+                            <source srcset="images/dr-levinger.webp" type="image/webp">
+                            <img src="images/dr-levinger.jpg" alt="ד״ר אליה לוינגר" class="w-full rounded-2xl shadow-xl" width="800" height="689" fetchpriority="high">
+                        </picture>
+                        <div class="flex justify-center items-center gap-6 mt-6 p-4 bg-gray-50 rounded-xl">
+                            <picture>
+                                <source srcset="images/duns100-new.webp" type="image/webp">
+                                <img src="images/duns100-new.jpg" alt="Dun's 100" class="h-14 rounded" width="225" height="225" loading="lazy">
+                            </picture>
+                            <picture>
+                                <source srcset="images/forbes-israel.webp" type="image/webp">
+                                <img src="images/forbes-israel.jpg" alt="Forbes Israel" class="h-14" width="381" height="251" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <div class="max-w-none text-gray-700 leading-relaxed">
+                            <p class="text-lg mb-5">
+                                ד״ר אליה לוינגר הוא מומחה בכיר לרפואת עיניים, בעל ניסיון של למעלה מ־20 שנה בניתוחי קטרקט, השתלות קרנית וטיפול במחלות עין מורכבות.
+                            </p>
+                            <p class="mb-5">
+                                הוא משלב מקצועיות רפואית גבוהה, טכנולוגיות מתקדמות ויחס אישי וצמוד לכל מטופל.
+                            </p>
+                            <p class="mb-5">
+                                ד״ר לוינגר משמש כמנהל שירות ניתוחי הקטרקט בבית החולים איכילוב ושימש כיו״ר חוג הקטרקט של איגוד רופאי העיניים בישראל.
+                            </p>
+                            <p class="mb-5">
+                                הוא מבצע אלפי ניתוחי קטרקט וקרנית בשנה, ומוביל חדשנות בתחום המקטע הקדמי בישראל.
+                            </p>
+                            <p class="font-semibold text-primary-dark">
+                                במרפאה הפרטית שלו, ד״ר אליה לוינגר מקפיד להעניק טיפול מקצועי לצד גישה אנושית, עם ליווי אישי של כל מטופל מהאבחון ועד לסיום המעקב.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mt-16 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-primary-dark mb-6 border-b-2 border-primary-light pb-2">השכלה והכשרה</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>בוגר בית הספר לרפואה בטכניון, חיפה</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>התמחות ברפואת עיניים במחלקת העיניים, בית החולים כרמל, חיפה</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>השתלמות־על (Fellowship) בקרנית ובמקטע קדמי של העין ב־Toronto Western Hospital, קנדה – מרכז רפואי מוביל עולמי</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>הכשרות מתקדמות בניתוחי קטרקט ועדשות פרימיום</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>הדרכת רופאים צעירים במסגרת הכשרה קלינית באיכילוב</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>השתתפות קבועה בכנסים בינלאומיים בתחום הקרנית והקטרקט</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="mt-12 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-primary-dark mb-6 border-b-2 border-primary-light pb-2">ניסיון מקצועי</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>מנהל שירות ניתוחי הקטרקט, בית החולים איכילוב</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>יו״ר חוג הקטרקט של איגוד רופאי העיניים בישראל</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>למעלה מ־20 שנות ניסיון קליני וניתוחי</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>אלפי ניתוחי קטרקט, השתלות קרנית וניתוחים במקטע הקדמי</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>מומחיות בטיפול במחלות קרנית, עין יבשה ומצבים מורכבים</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>ניסיון בטיפול בפטריגיום ובביצוע ניתוחים מתקדמים להפחתת סיכון לחזרה</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-primary mt-1">•</span>
+                        <span>השתתפות פעילה במחקר וחדשנות בתחום רפואת העיניים</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Treatment Approach Section -->
+        <section class="mt-12 px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-bold text-primary-dark mb-6 border-b-2 border-primary-light pb-2">הגישה הטיפולית של ד״ר אליה לוינגר</h2>
+                <div class="text-gray-700 leading-relaxed space-y-4">
+                    <p>
+                        ד״ר לוינגר מאמין בטיפול סבלני, אישי ומקצועי, המבוסס על הסבר מלא ושקוף לכל מטופל.
+                    </p>
+                    <p>
+                        הוא מלווה את המטופלים לכל אורך הדרך — מהאבחון הראשוני, דרך הניתוח ועד המעקב — מתוך מחויבות לבטיחות, נוחות ושקט נפשי.
+                    </p>
+                    <p>
+                        הטיפול מותאם אישית לצרכים הרפואיים של כל מטופל ומשלב טכנולוגיות מתקדמות לקבלת תוצאות מיטביות.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Unique Advantage Section -->
+        <section class="mt-12 px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-50 rounded-2xl p-8 border-r-4 border-primary">
+                    <h2 class="text-2xl font-bold text-primary-dark mb-4">היתרון הבלעדי של טיפול במרפאה של ד״ר אליה לוינגר</h2>
+                    <div class="text-gray-700 leading-relaxed space-y-4">
+                        <p>
+                            אחד מיתרונותיה הבולטים של המרפאה הוא <strong class="text-primary-dark">רצף טיפולי מלא אצל אותו רופא מומחה</strong>.
+                        </p>
+                        <p>
+                            ד״ר לוינגר מבצע באופן אישי את בדיקת ההתאמה, את הניתוח עצמו ואת ביקורות המעקב — גישה נדירה המבטיחה טיפול עקבי, בטוח ומדויק.
+                        </p>
+                        <p>
+                            ההיכרות העמוקה עם המטופל לאורך כל התהליך מאפשרת קבלת החלטות מדויקת יותר ושקט נפשי גבוה למטופלים ולבני משפחותיהם.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="mt-16 px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-6">רוצים לקבוע בדיקת ייעוץ אישית?</h2>
+                <a href="https://wa.me/972544826061?text=שלום%2C%20אשמח%20לקבוע%20תור%20לייעוץ" target="_blank" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-dark transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                    קביעת ייעוץ אישי
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: #f3f4ef; padding: 30px 0;">
+        <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
+            <p style="color: #5a6339;">© 2026 ד"ר אליה לוינגר. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button - Click to Expand -->
+    <a href="https://wa.me/972544826061?text=שלום%2C%20אשמח%20לקבוע%20תור%20לייעוץ" target="_blank" class="wa-float" aria-label="WhatsApp" onclick="return handleWaClick(this, event)">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.12-1.34C8.56 21.5 10.22 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.74 0-3.36-.56-4.69-1.5l-.34-.2-3.02.79.81-2.95-.22-.35C3.56 14.49 3 13.29 3 12c0-4.96 4.04-9 9-9s9 4.04 9 9-4.04 9-9 9z"/></svg>
+        <span>קביעת ייעוץ אישי</span>
+    </a>
+    <script>
+    function handleWaClick(el, e) {
+        if (!el.classList.contains('expanded')) {
+            e.preventDefault();
+            el.classList.add('expanded');
+            return false;
+        }
+        return true;
+    }
+    document.addEventListener('click', function(e) {
+        var wa = document.querySelector('.wa-float');
+        if (wa && !wa.contains(e.target)) {
+            wa.classList.remove('expanded');
+        }
+    });
+    </script>
+
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileNav').classList.toggle('active');
+        });
+    </script>
+    <!-- UserWay Accessibility Widget -->
+    <script defer src="https://cdn.userway.org/widget.js" data-account="free" data-position="3"></script>
+</body>
+</html>

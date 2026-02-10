@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קרטוקונוס | ד״ר אליה לוינגר</title>
+    <link rel="canonical" href="https://dr-levinger.co.il/keratoconus.html">
+    <meta name="description" content="אבחון וטיפול בקרטוקונוס במרפאת ד״ר אליה לוינגר, מומחה בקרנית ומחלות עיניים.">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7a8450',
+                        'primary-dark': '#5c6340',
+                        'primary-light': '#a3b06a',
+                    },
+                    fontFamily: {
+                        'assistant': ['Assistant', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Assistant', sans-serif; }
+        
+        /* Navigation Styles */
+        .nav-desktop {
+            display: none;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .nav-desktop > a {
+            padding: 8px 12px;
+            color: #333;
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+        .nav-desktop > a:hover { color: #7a8450; }
+        .nav-desktop .btn-primary {
+            background: #7a8450;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+        .nav-desktop .btn-primary:hover { background: #5c6340; }
+        
+        /* Dropdown */
+        .dropdown { position: relative; }
+        .dropdown-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 12px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            color: #333;
+            white-space: nowrap;
+        }
+        .dropdown-btn:hover { color: #7a8450; }
+        .dropdown-icon {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.3s;
+        }
+        .dropdown:hover .dropdown-icon { transform: rotate(180deg); }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            border-radius: 12px;
+            padding: 10px 0;
+            min-width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            transition: all 0.2s;
+        }
+        .dropdown-menu a:hover {
+            background: #f7f8f2;
+            color: #7a8450;
+        }
+        
+        /* Mobile Navigation */
+        .nav-mobile {
+            display: none;
+            flex-direction: column;
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e5e6de;
+        }
+        .nav-mobile.active { display: flex; }
+        .nav-mobile > a {
+            padding: 12px 0;
+            color: #333;
+            font-weight: 500;
+            border-bottom: 1px solid #f3f4ef;
+        }
+        .nav-mobile > a:hover { color: #7a8450; }
+        .nav-mobile .btn-primary {
+            margin-top: 15px;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 25px;
+            background: #7a8450;
+            color: white;
+        }
+        .mobile-dropdown {
+            padding: 15px 0;
+            border-bottom: 1px solid #f3f4ef;
+        }
+        .mobile-dropdown-title {
+            display: block;
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .mobile-dropdown a {
+            display: block;
+            padding: 8px 15px;
+            color: #333;
+            font-weight: 500;
+        }
+        .mobile-dropdown a:hover { color: #7a8450; }
+        
+        @media (min-width: 1024px) {
+            .nav-desktop { display: flex; }
+        }
+        
+.page-content {
+            padding: 120px 0 80px;
+            background: var(--background);
+        }
+        .page-content h1 {
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .content-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .content-section h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 10px;
+        }
+        .content-section p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+        .coming-soon-box {
+            background: linear-gradient(135deg, #f8faf5 0%, #e8ebe0 100%);
+            border: 2px dashed var(--primary);
+            padding: 60px 40px;
+            margin: 40px 0;
+            border-radius: 16px;
+            text-align: center;
+        }
+        .coming-soon-box h2 {
+            border: none;
+            margin-top: 0;
+        }
+        .coming-soon-box p {
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin: 0 auto 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="w-full px-4 xl:px-8 py-2 flex justify-between items-center">
+            <!-- Mobile menu button -->
+            <button id="menuBtn" class="lg:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <!-- RIGHT side: Logo + Name -->
+            <div class="hidden lg:flex items-center gap-3 order-first">
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="" class="h-12 w-auto" aria-hidden="true" width="48" height="48">
+                </picture>
+                <span class="text-xl font-extrabold text-primary-dark whitespace-nowrap">ד"ר אליה לוינגר</span>
+            </div>
+            <!-- CENTER: Desktop nav -->
+            <nav class="nav-desktop">
+                <a href="index.html">בית</a>
+                <a href="about.html">אודות</a>
+                <a href="cataract.html">קטרקט</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        התמחויות המרפאה
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="pterygium.html">פטריגיום</a>
+                        <a href="dry-eye.html">עין יבשה</a>
+                        <a href="keratoconus.html">קרטוקונוס</a>
+                        <a href="yag.html">יאג (קטרקט משני)</a>
+                    </div>
+                </div>
+                <a href="faq.html">שאלות נפוצות</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        מידע למטופלים
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="before-surgery.html">לפני ניתוח קטרקט</a>
+                        <a href="after-surgery.html">אחרי ניתוח קטרקט</a>
+                        
+                        
+                        <a href="forms.html">טפסים</a>
+                    </div>
+                </div>
+                <a href="https://wa.me/972544826061" target="_blank" class="btn-primary">צרו קשר</a>
+            </nav>
+            <!-- LEFT side: Info + Phone -->
+            <div class="flex items-center gap-3">
+                <div class="flex flex-col text-left">
+                    <span class="lg:hidden text-lg font-extrabold text-primary-dark">ד"ר אליה לוינגר</span>
+                    <span class="text-sm text-gray-500 whitespace-nowrap">מומחה בניתוחי קטרקט ועדשות פרימיום | תל אביב | <a href="tel:0544826061" class="text-primary font-semibold">📞 054-482-6061</a></span>
+                </div>
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="" class="lg:hidden h-10 w-auto" aria-hidden="true" width="40" height="40">
+                </picture>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileNav">
+            <a href="index.html">בית</a>
+            <a href="about.html">אודות</a>
+            <a href="cataract.html">קטרקט</a>
+            <div class="mobile-dropdown">
+                <span class="mobile-dropdown-title">התמחויות המרפאה:</span>
+                <a href="pterygium.html">פטריגיום</a>
+                <a href="dry-eye.html">עין יבשה</a>
+                <a href="keratoconus.html">קרטוקונוס</a>
+                <a href="yag.html">יאג (קטרקט משני)</a>
+            </div>
+            <a href="faq.html">שאלות נפוצות</a>
+            <div class="mobile-dropdown">
+                <span class="mobile-dropdown-title">מידע למטופלים:</span>
+                <a href="before-surgery.html">לפני ניתוח קטרקט</a>
+                <a href="after-surgery.html">אחרי ניתוח קטרקט</a>
+                
+                
+                <a href="forms.html">טפסים</a>
+            </div>
+            <a href="https://wa.me/972544826061" target="_blank" class="btn-primary">צרו קשר</a>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content">
+        <div class="content-section">
+            <h1>קרטוקונוס</h1>
+            
+            <h2>מה זו המחלה?</h2>
+            <p>הקרטוקונוס היא מחלה שבה הקרנית (השכבה השקופה הקדמית של העין) הופכת להיות דקה וחלשה יותר, ובמקום להיות עגולה וסימטרית, היא מתחילה לבלוט כלפי חוץ בצורת "חרוט".</p>
+            <p>השינוי הזה מעוות את הראייה וגורם לטשטוש משמעותי.</p>
+            
+            <h2>איך מאבחנים?</h2>
+            <p>האבחון מתבצע בבדיקת עיניים מקיפה.</p>
+            <p>הכלי העיקרי לאבחון ומעקב הוא <strong>מיפוי קרנית (Corneal Topography)</strong>, שנותן תמונה מפורטת של צורת הקרנית.</p>
+            <p>כמו כן, במרפאה משתמשים גם במכשיר <strong>OCT (טומוגרפיה קוהרנטית אופטית)</strong> מתקדם, שמדמה את שכבות הקרנית ומאפשר התאמה מדויקת של הטיפול.</p>
+            
+            <h2>דרכי הטיפול – מה עושים?</h2>
+            
+            <h3 style="color: var(--primary); margin-top: 25px; margin-bottom: 10px;">משקפיים</h3>
+            <p>בשלבים הראשונים של המחלה המשקפיים עשויים לעזור, אך ככל שהמחלה מתקדמת, הם כבר לא מצליחים לתקן את עיוות הראייה.</p>
+            
+            <h3 style="color: var(--primary); margin-top: 25px; margin-bottom: 10px;">עדשות מגע רגילות</h3>
+            <p>אם המשקפיים כבר לא מספיקים, עוברים לעדשות מגע רגילות. אם גם הן לא עוזרות...</p>
+            
+            <h3 style="color: var(--primary); margin-top: 25px; margin-bottom: 10px;">עדשות מגע מיוחדות לקרטוקונוס</h3>
+            <p>הפתרון המתקדם והיעיל ביותר הוא עדשות מגע ייעודיות:</p>
+            <p><strong>מיני-סקלרליות (Mini-Scleral) וסקלרליות (Scleral):</strong> אלו עדשות גדולות יותר, שמנוחות על החלק הלבן של העין (הלחמית) במקום על הקרנית. הן יוצרות מעין "גשר" מעל הקרנית החרוטית וממלאות את הרווח בנוזל, מה שמאפשר ראייה חדה וברורה יותר.</p>
+            <div style="background: #f7f8f2; border-right: 4px solid var(--primary); padding: 15px 20px; margin: 20px 0; border-radius: 8px;">
+                <p style="margin: 0;"><strong>חשוב לדעת:</strong> שירות התאמת עדשות מגע מיוחדות אלו ניתן במרפאה על ידי אופטומטריסט מומחה בתחום, תוך שילוב עם בדיקות המכשיר OCT.</p>
+            </div>
+            
+            <h3 style="color: var(--primary); margin-top: 25px; margin-bottom: 10px;">טיפול למניעת החמרה (Cross-Linking)</h3>
+            <p>טיפול <strong>קרוס-לינקינג (Cross-Linking)</strong> נועד לחזק את הקרנית ולעצור את התקדמות המחלה.</p>
+            <div style="background: linear-gradient(135deg, #f8faf5 0%, #e8ebe0 100%); border: 2px solid var(--primary); padding: 20px 25px; margin: 20px 0; border-radius: 12px; text-align: center;">
+                <p style="margin: 0; font-size: 1.1rem; font-weight: 600; color: var(--primary-dark);">במסגרת המרפאה, אנו מבצעים טיפול קצר וללא כאבים, שאינו דורש ניתוח או אשפוז, ומאפשר חזרה מהירה לשגרה.</p>
+            </div>
+            <p>הטיפול מבוסס על טיפות ויטמין B2 (ריבופלאבין) וחשיפה לאור אולטרה-סגול (UV), שיוצרות קשרים חדשים בקרנית ומייצבות אותה.</p>
+        </div>
+    
+        <!-- CTA -->
+        <section class="mt-16 px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-6">רוצים לקבוע בדיקת ייעוץ אישית?</h2>
+                <a href="https://wa.me/972544826061?text=שלום%2C%20אשמח%20לקבוע%20תור%20לייעוץ" target="_blank" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-dark transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                    קביעת ייעוץ אישי
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: #f3f4ef; padding: 30px 0;">
+        <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
+            <p style="color: #5a6339;">© 2026 ד"ר אליה לוינגר. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileNav').classList.toggle('active');
+        });
+    </script>
+    <!-- UserWay Accessibility Widget -->
+    <script defer src="https://cdn.userway.org/widget.js" data-account="free" data-position="3"></script>
+</body>
+</html>

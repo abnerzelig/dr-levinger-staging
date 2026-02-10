@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60">
+  <!-- Eye shape -->
+  <ellipse cx="60" cy="30" rx="55" ry="28" fill="none" stroke="#5c4a32" stroke-width="3"/>
+  <!-- Inner curve (eyelid) -->
+  <path d="M 10 30 Q 60 -5 110 30" fill="none" stroke="#5c4a32" stroke-width="2"/>
+  <!-- Letter E -->
+  <text x="60" y="38" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#5c4a32" text-anchor="middle">E</text>
+  <!-- Pupil dot -->
+  <circle cx="75" cy="30" r="4" fill="#5c4a32"/>
+</svg>

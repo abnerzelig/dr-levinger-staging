@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לפני ניתוח קטרקט | הכנה ובדיקות התאמה | ד״ר אליה לוינגר</title>
+    <link rel="canonical" href="https://dr-levinger.co.il/before-surgery.html">
+    <meta name="description" content="הכנה לניתוח קטרקט - בדיקות התאמה, ביומטריה והנחיות למטופל. כל מה שצריך לדעת לקראת הניתוח אצל ד״ר אליה לוינגר.">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7a8450',
+                        'primary-dark': '#5c6340',
+                        'primary-light': '#a3b06a',
+                    },
+                    fontFamily: {
+                        'assistant': ['Assistant', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Assistant', sans-serif; }
+        
+        /* Navigation Styles */
+        .nav-desktop {
+            display: none;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .nav-desktop > a {
+            padding: 8px 12px;
+            color: #333;
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+        .nav-desktop > a:hover { color: #7a8450; }
+        .nav-desktop .btn-primary {
+            background: #7a8450;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+        .nav-desktop .btn-primary:hover { background: #5c6340; }
+        
+        /* Dropdown */
+        .dropdown { position: relative; }
+        .dropdown-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 12px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            color: #333;
+            white-space: nowrap;
+        }
+        .dropdown-btn:hover { color: #7a8450; }
+        .dropdown-icon {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.3s;
+        }
+        .dropdown:hover .dropdown-icon { transform: rotate(180deg); }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            border-radius: 12px;
+            padding: 10px 0;
+            min-width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            transition: all 0.2s;
+        }
+        .dropdown-menu a:hover {
+            background: #f7f8f2;
+            color: #7a8450;
+        }
+        
+        /* Mobile Navigation */
+        .nav-mobile {
+            display: none;
+            flex-direction: column;
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e5e6de;
+        }
+        .nav-mobile.active { display: flex; }
+        .nav-mobile > a {
+            padding: 12px 0;
+            color: #333;
+            font-weight: 500;
+            border-bottom: 1px solid #f3f4ef;
+        }
+        .nav-mobile > a:hover { color: #7a8450; }
+        .nav-mobile .btn-primary {
+            margin-top: 15px;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 25px;
+            background: #7a8450;
+            color: white;
+        }
+        .mobile-dropdown {
+            padding: 15px 0;
+            border-bottom: 1px solid #f3f4ef;
+        }
+        .mobile-dropdown-title {
+            display: block;
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .mobile-dropdown a {
+            display: block;
+            padding: 8px 15px;
+            color: #333;
+            font-weight: 500;
+        }
+        .mobile-dropdown a:hover { color: #7a8450; }
+        
+        @media (min-width: 1024px) {
+            .nav-desktop { display: flex; }
+        }
+        
+.page-content {
+            padding: 120px 0 80px;
+            background: var(--background);
+        }
+        .page-content h1 {
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .page-intro {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text);
+            line-height: 1.8;
+        }
+        .content-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .content-section h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 10px;
+        }
+        .content-section p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+        .content-section ul {
+            list-style: disc;
+            padding-right: 25px;
+            margin-bottom: 20px;
+        }
+        .content-section li {
+            line-height: 1.8;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        .content-section strong {
+            color: var(--primary-dark);
+        }
+        .highlight-box {
+            background: var(--background-alt);
+            border-right: 4px solid var(--primary);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .steps-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding-right: 0;
+        }
+        .steps-list li {
+            counter-increment: step-counter;
+            padding-right: 45px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .steps-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: var(--primary);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .cta-box p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 20px;
+        }
+        .cta-box .btn-white {
+            background: white;
+            color: var(--primary-dark);
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .cta-box .btn-white:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="w-full px-4 xl:px-8 py-2 flex justify-between items-center">
+            <!-- Mobile menu button -->
+            <button id="menuBtn" class="lg:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <!-- RIGHT side: Logo + Name -->
+            <div class="hidden lg:flex items-center gap-3 order-first">
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="" class="h-12 w-auto" aria-hidden="true" width="48" height="48">
+                </picture>
+                <span class="text-xl font-extrabold text-primary-dark whitespace-nowrap">ד"ר אליה לוינגר</span>
+            </div>
+            <!-- CENTER: Desktop nav -->
+            <nav class="nav-desktop">
+                <a href="index.html">בית</a>
+                <a href="about.html">אודות</a>
+                <a href="cataract.html">קטרקט</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        התמחויות המרפאה
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="pterygium.html">פטריגיום</a>
+                        <a href="dry-eye.html">עין יבשה</a>
+                        <a href="keratoconus.html">קרטוקונוס</a>
+                        <a href="yag.html">יאג (קטרקט משני)</a>
+                    </div>
+                </div>
+                <a href="faq.html">שאלות נפוצות</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        מידע למטופלים
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="before-surgery.html">לפני ניתוח קטרקט</a>
+                        <a href="after-surgery.html">אחרי ניתוח קטרקט</a>
+                        
+                        
+                        <a href="forms.html">טפסים</a>
+                    </div>
+                </div>
+                <a href="https://wa.me/972544826061" target="_blank" class="btn-primary">צרו קשר</a>
+            </nav>
+            <!-- LEFT side: Info + Phone -->
+            <div class="flex items-center gap-3">
+                <div class="flex flex-col text-left">
+                    <span class="lg:hidden text-lg font-extrabold text-primary-dark">ד"ר אליה לוינגר</span>
+                    <span class="text-sm text-gray-500 whitespace-nowrap">מומחה בניתוחי קטרקט ועדשות פרימיום | תל אביב | <a href="tel:0544826061" class="text-primary font-semibold">📞 054-482-6061</a></span>
+                </div>
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="" class="lg:hidden h-10 w-auto" aria-hidden="true" width="40" height="40">
+                </picture>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileNav">
+            <a href="index.html">בית</a>
+            <a href="about.html">אודות</a>
+            <a href="cataract.html">קטרקט</a>
+            <div class="mobile-dropdown">
+                <span class="mobile-dropdown-title">התמחויות המרפאה:</span>
+                <a href="pterygium.html">פטריגיום</a>
+                <a href="dry-eye.html">עין יבשה</a>
+                <a href="keratoconus.html">קרטוקונוס</a>
+                <a href="yag.html">יאג (קטרקט משני)</a>
+            </div>
+            <a href="faq.html">שאלות נפוצות</a>
+            <div class="mobile-dropdown">
+                <span class="mobile-dropdown-title">מידע למטופלים:</span>
+                <a href="before-surgery.html">לפני ניתוח קטרקט</a>
+                <a href="after-surgery.html">אחרי ניתוח קטרקט</a>
+                
+                
+                <a href="forms.html">טפסים</a>
+            </div>
+            <a href="https://wa.me/972544826061" target="_blank" class="btn-primary">צרו קשר</a>
+        </nav>
+    </header>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileNav').classList.toggle('active');
+        });
+    </script>
+
+    <!-- Page Content -->
+    <main class="page-content">
+        <div class="content-section">
+            <h1>לפני ניתוח קטרקט</h1>
+            <p class="page-intro">ההחלטה לעבור ניתוח קטרקט היא הצעד הראשון בדרך לשיפור משמעותי באיכות החיים שלכם. אצל ד״ר אליה לוינגר, תהליך ההכנה לניתוח הוא יסודי ומדויק, ומטרתו לא רק להסיר את הקטרקט, אלא לתכנן את הראייה העתידית שלכם בצורה האופטימלית ביותר.</p>
+            
+            <h2>שלב 1: בדיקת התאמה מקיפה ואבחון</h2>
+            <p>לפני שקובעים תאריך לניתוח, ד״ר לוינגר מבצע בדיקת עיניים מעמיקה כדי לשלול מחלות עיניים אחרות העלולות להשפיע על התוצאה (כמו ניוון רשתית או גלאוקומה). בשלב זה נבדוק:</p>
+            <ul>
+                <li>חדות הראייה הנוכחית</li>
+                <li>לחץ תוך-עיני</li>
+                <li>בריאות הקרנית והרשתית (בדיקת Fundus לאחר הרחבת אישונים)</li>
+                <li>נוכחות של יובש בעיניים (חשוב מאוד לטפל ביובש לפני הניתוח כדי להבטיח מדידות מדויקות והחלמה טובה)</li>
+            </ul>
+            
+            <h2>שלב 2: ביומטריה ומדידת העדשה</h2>
+            <p>זהו השלב הקריטי ביותר לתכנון הניתוח. מכיוון שאנו משתילים בעין עדשה מלאכותית, עלינו לחשב בדיוק מיקרוסקופי את המספר (הכוח) שלה.</p>
+            <p>במרפאה מתבצעת מדידה ביומטרית מתקדמת הסורקת את העין ומודדת את אורך גלגל העין ואת קמירות הקרנית.</p>
+            
+            <div class="highlight-box">
+                <strong>למה זה חשוב?</strong><br>
+                דיוק בבדיקה זו הוא מה שמאפשר לד״ר לוינגר להציע לכם עדשות פרימיום (מולטיפוקליות או טוריות) שיכולות לשחרר אתכם מהצורך במשקפיים לאחר הניתוח.
+            </div>
+            
+            <h2>שלב 3: שיחה אישית ותיאום ציפיות</h2>
+            <p>לאחר קבלת הנתונים, ד״ר לוינגר יושב אתכם לשיחה אישית. בניגוד לרפואה הציבורית בה לרוב "הרופא מחליט", כאן ההחלטה היא משותפת. נשאל אתכם:</p>
+            <ul>
+                <li>האם חשוב לכם לראות לרחוק ללא משקפיים?</li>
+                <li>האם אתם קוראים הרבה או עובדים מול מחשב?</li>
+                <li>האם אתם נוהגים בלילה?</li>
+            </ul>
+            <p>בהתאם לתשובות ולנתוני העין, תיבחר העדשה המתאימה ביותר לאורח חייכם.</p>
+            
+            <h2>הנחיות רפואיות לקראת יום הניתוח</h2>
+            <ul>
+                <li><strong>צום:</strong> הניתוח מבוצע לרוב בהרדמה מקומית, ולכן בדרך כלל אין צורך בצום מלא, אלא רק בארוחה קלה לפני כן (אלא אם קיבלתם הנחיה אחרת מהמרדים).</li>
+                <li><strong>תרופות קבועות:</strong> לרוב ניתן להמשיך ליטול תרופות כרגיל (כולל אספירין), אך יש לדווח לד״ר לוינגר על כל תרופה שאתם נוטלים, במיוחד מדללי דם.</li>
+                <li><strong>טיפות:</strong> בחלק מהמקרים תתבקשו להתחיל לזלף טיפות אנטיביוטיות או נוגדות דלקת יום לפני הניתוח.</li>
+            </ul>
+            
+            <h2>ביום הניתוח – למה לצפות?</h2>
+            <p>ביום הניתוח תגיעו לחדר הניתוח, שם תפגשו שוב את ד״ר לוינגר ואת הצוות.</p>
+            <ul class="steps-list">
+                <li>האחות תזלף לעינכם טיפות להרחבת האישונים ולאילחוש המקום (אין זריקות כואבות בעין).</li>
+                <li>הניתוח עצמו נמשך דקות ספורות, במהלכן לא תרגישו כאב, אלא אולי לחץ קל ומים זורמים.</li>
+                <li>בסיום הניתוח, העין תכוסה במגן פלסטיק שקוף.</li>
+                <li>לאחר התאוששות קצרה בלובי, תשוחררו הביתה. <strong>חובה להגיע עם מלווה</strong>, שכן הראייה בעין המנותחת תהיה מטושטשת בשעות הראשונות.</li>
+            </ul>
+            
+            <div class="cta-box">
+                <h3>מוכנים להתחיל?</h3>
+                <p>צרו קשר לקביעת בדיקת התאמה ותכנון הניתוח</p>
+                <a href="https://wa.me/972544826061" target="_blank" class="btn-white">לתיאום ייעוץ</a>
+            </div>
+        </div>
+    
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: #f3f4ef; padding: 30px 0;">
+        <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
+            <p style="color: #5a6339;">© 2026 ד"ר אליה לוינגר. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <!-- UserWay Accessibility Widget -->
+    <script defer src="https://cdn.userway.org/widget.js" data-account="free" data-position="3"></script>
+</body>
+</html>

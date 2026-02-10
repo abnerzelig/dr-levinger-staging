@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מרכז הידע | כתבות ומאמרים | ד״ר אליה לוינגר</title>
+    <link rel="canonical" href="https://dr-levinger.co.il/knowledge-center.html">
+    <meta name="description" content="מרכז הידע של ד״ר אליה לוינגר - כתבות ומאמרים מקצועיים בנושא ניתוחי קטרקט, עדשות, עין יבשה ובריאות העין.">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7a8450',
+                        'primary-dark': '#5c6340',
+                        'primary-light': '#a3b06a',
+                    },
+                    fontFamily: {
+                        'assistant': ['Assistant', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { font-family: 'Assistant', sans-serif; }
+        
+        /* Navigation Styles */
+        .nav-desktop {
+            display: none;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .nav-desktop > a {
+            padding: 8px 12px;
+            color: #333;
+            transition: color 0.2s;
+            white-space: nowrap;
+        }
+        .nav-desktop > a:hover { color: #7a8450; }
+        .nav-desktop .btn-primary {
+            background: #7a8450;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+        .nav-desktop .btn-primary:hover { background: #5c6340; }
+        
+        /* Dropdown */
+        .dropdown { position: relative; }
+        .dropdown-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 12px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            color: #333;
+            white-space: nowrap;
+        }
+        .dropdown-btn:hover { color: #7a8450; }
+        .dropdown-icon {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.3s;
+        }
+        .dropdown:hover .dropdown-icon { transform: rotate(180deg); }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            border-radius: 12px;
+            padding: 10px 0;
+            min-width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            transition: all 0.2s;
+        }
+        .dropdown-menu a:hover {
+            background: #f7f8f2;
+            color: #7a8450;
+        }
+        
+        /* Mobile Navigation */
+        .nav-mobile {
+            display: none;
+            flex-direction: column;
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e5e6de;
+        }
+        .nav-mobile.active { display: flex; }
+        .nav-mobile > a {
+            padding: 12px 0;
+            color: #333;
+            font-weight: 500;
+            border-bottom: 1px solid #f3f4ef;
+        }
+        .nav-mobile > a:hover { color: #7a8450; }
+        .nav-mobile .btn-primary {
+            margin-top: 15px;
+            text-align: center;
+            padding: 12px 20px;
+            border-radius: 25px;
+            background: #7a8450;
+            color: white;
+        }
+        .mobile-dropdown {
+            padding: 15px 0;
+            border-bottom: 1px solid #f3f4ef;
+        }
+        .mobile-dropdown-title {
+            display: block;
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .mobile-dropdown a {
+            display: block;
+            padding: 8px 15px;
+            color: #333;
+            font-weight: 500;
+        }
+        .mobile-dropdown a:hover { color: #7a8450; }
+        
+        @media (min-width: 1024px) {
+            .nav-desktop { display: flex; }
+        }
+        
+.page-content {
+            padding: 120px 0 80px;
+            background: var(--background);
+        }
+        .page-content h1 {
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .page-intro {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            padding: 0 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text);
+            line-height: 1.8;
+        }
+        .content-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .content-section h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 50px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .article-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        .article-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+        }
+        .article-image-placeholder {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg, #e8ebe0 0%, #d4d9c6 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        .article-content {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .article-category {
+            font-size: 0.85rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .article-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .article-excerpt {
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.6;
+            flex: 1;
+        }
+        .article-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-top: 15px;
+            font-size: 0.95rem;
+        }
+        .article-link svg {
+            width: 18px;
+            height: 18px;
+            transition: transform 0.2s;
+        }
+        .article-card:hover .article-link svg {
+            transform: translateX(-5px);
+        }
+        
+        /* Featured articles */
+        .featured-articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        @media (max-width: 900px) {
+            .featured-articles {
+                grid-template-columns: 1fr;
+            }
+        }
+        .featured-card {
+            background: linear-gradient(135deg, #f8faf5 0%, #e8ebe0 100%);
+            border-radius: 16px;
+            padding: 30px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid transparent;
+        }
+        .featured-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: var(--primary-light);
+        }
+        .featured-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .featured-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+        .featured-excerpt {
+            font-size: 0.9rem;
+            color: var(--text);
+            line-height: 1.5;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .cta-box p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 20px;
+        }
+        .cta-box .btn-white {
+            background: white;
+            color: var(--primary-dark);
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .cta-box .btn-white:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="w-full px-4 xl:px-8 py-2 flex justify-between items-center">
+            <!-- Mobile menu button -->
+            <button id="menuBtn" class="lg:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <!-- RIGHT side: Logo + Name -->
+            <div class="hidden lg:flex items-center gap-3 order-first">
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="" class="h-12 w-auto" aria-hidden="true" width="48" height="48">
+                </picture>
+                <span class="text-xl font-extrabold text-primary-dark whitespace-nowrap">ד"ר אליה לוינגר</span>
+            </div>
+            <!-- CENTER: Desktop nav -->
+            <nav class="nav-desktop">
+                <a href="index.html">בית</a>
+                <a href="about.html">אודות</a>
+                <a href="cataract.html">קטרקט</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        התמחויות המרפאה
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="pterygium.html">פטריגיום</a>
+                        <a href="dry-eye.html">עין יבשה</a>
+                        <a href="keratoconus.html">קרטוקונוס</a>
+                        <a href="yag.html">יאג (קטרקט משני)</a>
+                    </div>
+                </div>
+                <a href="faq.html">שאלות נפוצות</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        מידע למטופלים
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="before-surgery.html">לפני ניתוח קטרקט</a>
+                        <a href="after-surgery.html">אחרי ניתוח קטרקט</a>
+                        <a href="knowledge-center.html">מרכז הידע</a>
+                        <a href="videos.html">סרטונים</a>
+                        <a href="forms.html">טפסים</a>
+                    </div>
+                </div>
+                <a href="https://wa.me/972544826061" target="_blank" class="btn-primary">צרו קשר</a>
+            </nav>
+            <!-- LEFT side: Info + Phone -->
+            <div class="flex items-center gap-3">
+                <div class="flex flex-col text-left">
+                    <span class="lg:hidden text-lg font-extrabold text-primary-dark">ד"ר אליה לוינגר</span>
+                    <span class="text-sm text-gray-500 whitespace-nowrap">מומחה בניתוחי קטרקט ועדשות פרימיום | תל אביב | <a href="tel:0544826061" class="text-primary font-semibold">📞 054-482-6061</a></span>
+                </div>
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="" class="lg:hidden h-10 w-auto" aria-hidden="true" width="40" height="40">
+                </picture>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileNav">
+            <a href="index.html">בית</a>
+            <a href="about.html">אודות</a>
+            <a href="cataract.html">קטרקט</a>
+            <div class="mobile-dropdown">
+                <span class="mobile-dropdown-title">התמחויות המרפאה:</span>
+                <a href="pterygium.html">פטריגיום</a>
+                <a href="dry-eye.html">עין יבשה</a>
+                <a href="keratoconus.html">קרטוקונוס</a>
+                <a href="yag.html">יאג (קטרקט משני)</a>
+            </div>
+            <a href="faq.html">שאלות נפוצות</a>
+            <div class="mobile-dropdown">
+                <span class="mobile-dropdown-title">מידע למטופלים:</span>
+                <a href="before-surgery.html">לפני ניתוח קטרקט</a>
+                <a href="after-surgery.html">אחרי ניתוח קטרקט</a>
+                <a href="knowledge-center.html">מרכז הידע</a>
+                <a href="videos.html">סרטונים</a>
+                <a href="forms.html">טפסים</a>
+            </div>
+            <a href="https://wa.me/972544826061" target="_blank" class="btn-primary">צרו קשר</a>
+        </nav>
+    </header>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            document.getElementById('mobileNav').classList.toggle('active');
+        });
+    </script>
+
+    <!-- Page Content -->
+    <main class="page-content">
+        <div class="content-section">
+            <h1>מרכז הידע</h1>
+            <p class="page-intro">ברוכים הבאים למרכז הידע של ד״ר אליה לוינגר. כאן תמצאו כתבות ומאמרים מקצועיים שיעזרו לכם להבין טוב יותר את נושאי ניתוחי הקטרקט, בחירת עדשות, עין יבשה ועוד.</p>
+            
+            <h2>3 הכתבות שעניינו את המטופלים שלנו הכי הרבה</h2>
+            
+            <div class="featured-articles">
+                <a href="#" class="featured-card">
+                    <div class="featured-icon">⏳</div>
+                    <div class="featured-title">למה אסור לחכות שהקטרקט "יבשיל"?</div>
+                    <div class="featured-excerpt">המיתוס המסוכן שעלול להפוך את הניתוח למורכב יותר</div>
+                </a>
+                <a href="#" class="featured-card">
+                    <div class="featured-icon">👓</div>
+                    <div class="featured-title">חיים ללא משקפיים אחרי גיל 60</div>
+                    <div class="featured-excerpt">הכל על עדשות מולטיפוקליות בניתוח קטרקט</div>
+                </a>
+                <a href="#" class="featured-card">
+                    <div class="featured-icon">🔬</div>
+                    <div class="featured-title">הקטרקט חזר? (לא באמת)</div>
+                    <div class="featured-excerpt">מה זה קטרקט משני ואיך יאג לייזר פותר את זה ב-5 דקות</div>
+                </a>
+            </div>
+            
+            <h2>כל הכתבות</h2>
+            
+            <div class="articles-grid">
+                <a href="#" class="article-card">
+                    <div class="article-image-placeholder">💡</div>
+                    <div class="article-content">
+                        <div class="article-category">ניתוח קטרקט</div>
+                        <div class="article-title">ניתוח קטרקט בלייזר או בשיטה המסורתית?</div>
+                        <div class="article-excerpt">המדריך שיעזור לכם להחליט מה עדיף עבורכם - השוואה מקצועית בין השיטות.</div>
+                        <span class="article-link">
+                            קראו עוד
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="#" class="article-card">
+                    <div class="article-image-placeholder">💻</div>
+                    <div class="article-content">
+                        <div class="article-category">עין יבשה</div>
+                        <div class="article-title">העיניים שורפות מול המחשב?</div>
+                        <div class="article-excerpt">5 סימנים שיש לכם עין יבשה (ולא סתם עייפות) ומה אפשר לעשות.</div>
+                        <span class="article-link">
+                            קראו עוד
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="#" class="article-card">
+                    <div class="article-image-placeholder">☀️</div>
+                    <div class="article-content">
+                        <div class="article-category">פטריגיום</div>
+                        <div class="article-title">לא רק אסתטיקה: פטריגיום והראייה</div>
+                        <div class="article-excerpt">למה חשוב לטפל בפטריגיום לפני שהוא פוגע בראייה, והשיטה המתקדמת ללא תפרים.</div>
+                        <span class="article-link">
+                            קראו עוד
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="#" class="article-card">
+                    <div class="article-image-placeholder">😴</div>
+                    <div class="article-content">
+                        <div class="article-category">ניתוח קטרקט</div>
+                        <div class="article-title">ערים אבל לא מרגישים</div>
+                        <div class="article-excerpt">האמת על הרדמה בניתוחי עיניים והפחד מכאב - הסבר מרגיע למתח שלפני.</div>
+                        <span class="article-link">
+                            קראו עוד
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="cta-box">
+                <h3>לא מצאתם תשובה?</h3>
+                <p>צרו קשר ונשמח לענות על כל שאלה</p>
+                <a href="https://wa.me/972544826061" target="_blank" class="btn-white">שלחו הודעה</a>
+            </div>
+        </div>
+    
+        <!-- CTA -->
+        <section class="mt-16 px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-6">רוצים לקבוע בדיקת ייעוץ אישית?</h2>
+                <a href="https://wa.me/972544826061?text=שלום%2C%20אשמח%20לקבוע%20תור%20לייעוץ" target="_blank" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-dark transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                    קביעת ייעוץ אישי
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: #f3f4ef; padding: 30px 0;">
+        <div style="max-width: 1280px; margin: 0 auto; text-align: center;">
+            <p style="color: #5a6339;">© 2026 ד"ר אליה לוינגר. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <!-- UserWay Accessibility Widget -->
+    <script defer src="https://cdn.userway.org/widget.js" data-account="free" data-position="3"></script>
+</body>
+</html>
